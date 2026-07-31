@@ -1,0 +1,48 @@
+entity wind_turbine_nacelle
+	displayName: wind_turbine_nacelle
+	lineageTag: 72f88dd1-0718-431a-b3a6-43adbc498756
+	backingTable: wind_turbine_nacelle
+	namespace: default
+
+	property TurbineId
+		dataType: string
+		lineageTag: 46821d8d-06b9-4c38-b0b3-854b3913a691
+
+		backingConfiguration
+			valueColumn: wind_turbine_nacelle.TurbineId
+
+	property ComponentId
+		dataType: string
+		lineageTag: cc1bbfd1-370d-4f28-88bb-75be7a0853ae
+
+		backingConfiguration
+			valueColumn: wind_turbine_nacelle.ComponentId
+
+	property ComponentNane
+		dataType: string
+		lineageTag: 8ca1051a-96f3-4b34-85ca-b738aaca3622
+
+		backingConfiguration
+			valueColumn: wind_turbine_nacelle.ComponentNane
+
+	property ComponentDetails
+		dataType: string
+		lineageTag: 70049f9f-8253-494d-bace-9850c74d4d4e
+
+		backingConfiguration
+			valueColumn: wind_turbine_nacelle.ComponentDetails
+
+	property SerialNumber
+		dataType: string
+		lineageTag: af3cae2a-1df7-423e-ae07-aca612b35ca8
+
+		backingConfiguration
+			valueColumn: wind_turbine_nacelle.SerialNumber
+
+	property Manufacturer
+		dataType: string
+		lineageTag: 0fd09eef-7a4a-428d-8436-5f8fd20ed193
+
+		backingConfiguration
+			valueColumn: wind_turbine_nacelle.Manufacturer
+

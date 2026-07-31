@@ -1,0 +1,4 @@
+/// Wind farm operations ontology projected from the WindFarmLH_augmented DirectLake semantic model. Models plants, turbines, turbine components, maintenance work orders, staff, weather towers and status codes. Turbine and weather-tower telemetry are modeled as time-series properties on the turbine and weather-tower entities.
+database
+	compatibilityLevel: 2147483647
+

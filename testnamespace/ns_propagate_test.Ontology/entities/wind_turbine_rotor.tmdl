@@ -1,0 +1,48 @@
+entity wind_turbine_rotor
+	displayName: wind_turbine_rotor
+	lineageTag: bb187295-0021-4136-ae99-23b572a7d7ab
+	backingTable: wind_turbine_rotor
+	namespace: default
+
+	property TurbineId
+		dataType: string
+		lineageTag: 4161958b-931f-4abb-a3ae-887d4ab302dc
+
+		backingConfiguration
+			valueColumn: wind_turbine_rotor.TurbineId
+
+	property ComponentId
+		dataType: string
+		lineageTag: 5175a4c6-3aa6-4599-9adb-44ae4a45ad87
+
+		backingConfiguration
+			valueColumn: wind_turbine_rotor.ComponentId
+
+	property ComponentNane
+		dataType: string
+		lineageTag: 0a1624cf-f8cf-4518-b038-56757b5ab2d4
+
+		backingConfiguration
+			valueColumn: wind_turbine_rotor.ComponentNane
+
+	property ComponentDetails
+		dataType: string
+		lineageTag: c7bcf80d-5ede-43e6-92c3-ca0021c3e599
+
+		backingConfiguration
+			valueColumn: wind_turbine_rotor.ComponentDetails
+
+	property SerialNumber
+		dataType: string
+		lineageTag: 9f0b4050-fd3f-4ec6-b769-7e8ae15d177a
+
+		backingConfiguration
+			valueColumn: wind_turbine_rotor.SerialNumber
+
+	property Manufacturer
+		dataType: string
+		lineageTag: 37818925-7ddf-4fb2-b8f1-28845ac92710
+
+		backingConfiguration
+			valueColumn: wind_turbine_rotor.Manufacturer
+

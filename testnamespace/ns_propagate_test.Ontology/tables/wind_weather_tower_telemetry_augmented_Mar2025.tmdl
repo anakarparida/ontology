@@ -1,0 +1,103 @@
+table wind_weather_tower_telemetry_augmented_Mar2025
+	lineageTag: 7799da81-915c-4d4c-b7ec-beb4a439b9f5
+	sourceLineageTag: [dbo].[wind_weather_tower_telemetry_augmented_Mar2025]
+
+	column TowerId
+		dataType: string
+		lineageTag: 1f710e82-8573-4b30-839f-0d2822f06358
+		sourceLineageTag: TowerId
+		sourceColumn: TowerId
+
+		annotation SummarizationSetBy = Automatic
+
+	column Humidity_percent
+		dataType: int64
+		formatString: 0
+		lineageTag: 648efccc-52a3-4afe-bbbb-534c6b7afc55
+		sourceLineageTag: Humidity_percent
+		sourceColumn: Humidity_percent
+
+		annotation SummarizationSetBy = Automatic
+
+	column Pressure_hPa
+		dataType: int64
+		formatString: 0
+		lineageTag: b52ff50a-b344-45c9-ae56-3ef52a5b0c6b
+		sourceLineageTag: Pressure_hPa
+		sourceColumn: Pressure_hPa
+
+		annotation SummarizationSetBy = Automatic
+
+	column SolarRadiation
+		dataType: int64
+		formatString: 0
+		lineageTag: a1c5f94c-c952-46e7-b67b-a071180e39d6
+		sourceLineageTag: SolarRadiation
+		sourceColumn: SolarRadiation
+
+		annotation SummarizationSetBy = Automatic
+
+	column Temperature
+		dataType: int64
+		formatString: 0
+		lineageTag: 93a6e6a5-8495-43e9-a0d6-d612b4417142
+		sourceLineageTag: Temperature
+		sourceColumn: Temperature
+
+		annotation SummarizationSetBy = Automatic
+
+	column Turbulence
+		dataType: int64
+		formatString: 0
+		lineageTag: 481ef55c-a9dd-44e5-9226-ef104ccaf7e8
+		sourceLineageTag: Turbulence
+		sourceColumn: Turbulence
+
+		annotation SummarizationSetBy = Automatic
+
+	column WindDirection
+		dataType: int64
+		formatString: 0
+		lineageTag: 455727f2-7d36-4679-9899-1342de3d734b
+		sourceLineageTag: WindDirection
+		sourceColumn: WindDirection
+
+		annotation SummarizationSetBy = Automatic
+
+	column WindShear
+		dataType: double
+		lineageTag: 862e438e-b2ef-4940-8bdb-e516223fd5ba
+		sourceLineageTag: WindShear
+		sourceColumn: WindShear
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column WindSpeed
+		dataType: int64
+		formatString: 0
+		lineageTag: 21808dac-9037-4062-ad8a-df03da41ac32
+		sourceLineageTag: WindSpeed
+		sourceColumn: WindSpeed
+
+		annotation SummarizationSetBy = Automatic
+
+	column Timestamp
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 9b9ecc8d-c52a-4bba-8a0f-81c8c4ffb1a3
+		sourceLineageTag: Timestamp
+		sourceColumn: Timestamp
+
+		annotation SummarizationSetBy = Automatic
+
+	partition wind_weather_tower_telemetry_augmented_Mar2025 = entity
+		mode: directLake
+		source
+			entityName: wind_weather_tower_telemetry_augmented_Mar2025
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,48 @@
+entity wind_turbine_gearbox
+	displayName: wind_turbine_gearbox
+	lineageTag: eda8a070-1215-48ca-8acb-3228a0974000
+	backingTable: wind_turbine_gearbox
+	namespace: default
+
+	property TurbineId
+		dataType: string
+		lineageTag: 589b4c62-bc45-4f9f-9813-efe3b766d5b8
+
+		backingConfiguration
+			valueColumn: wind_turbine_gearbox.TurbineId
+
+	property ComponentId
+		dataType: string
+		lineageTag: e42ade64-e6e7-4848-8b65-5885a8140471
+
+		backingConfiguration
+			valueColumn: wind_turbine_gearbox.ComponentId
+
+	property ComponentNane
+		dataType: string
+		lineageTag: 82c8434e-4855-4c49-8e2e-e31cf70bacd5
+
+		backingConfiguration
+			valueColumn: wind_turbine_gearbox.ComponentNane
+
+	property ComponentDetails
+		dataType: string
+		lineageTag: ee18f384-61de-405d-865f-22025c5daf17
+
+		backingConfiguration
+			valueColumn: wind_turbine_gearbox.ComponentDetails
+
+	property SerialNumber
+		dataType: string
+		lineageTag: 6da57a45-0873-4f1e-858f-62a105dae123
+
+		backingConfiguration
+			valueColumn: wind_turbine_gearbox.SerialNumber
+
+	property Manufacturer
+		dataType: string
+		lineageTag: bf3b8eb8-69ad-4574-b032-aeec43bd5036
+
+		backingConfiguration
+			valueColumn: wind_turbine_gearbox.Manufacturer
+

@@ -1,0 +1,97 @@
+entity wind_maintenance_requests
+	displayName: wind_maintenance_requests
+	lineageTag: 992b8283-2a9e-4364-8e8a-45c9a47ac721
+	backingTable: wind_maintenance_requests
+	namespace: default
+
+	property WorkorderId
+		dataType: string
+		lineageTag: f2d921a7-a5a5-4b3e-80b8-1c1930c7856e
+
+		backingConfiguration
+			valueColumn: wind_maintenance_requests.WorkorderId
+
+	property TurbineId
+		dataType: string
+		lineageTag: 1c583328-f016-4d5a-aa6c-627ec0332fd5
+
+		backingConfiguration
+			valueColumn: wind_maintenance_requests.TurbineId
+
+	property WorkOrderType
+		dataType: int64
+		lineageTag: 04c60d4e-75b0-44f1-9414-cb52c9fb4382
+
+		backingConfiguration
+			valueColumn: wind_maintenance_requests.WorkOrderType
+
+	property Status
+		dataType: int64
+		lineageTag: ad7646bc-ed7d-419b-bd0d-132c1ea3fcea
+
+		backingConfiguration
+			valueColumn: wind_maintenance_requests.Status
+
+	property Priority
+		dataType: int64
+		lineageTag: f5695ca9-2a8a-4dd5-9216-7420e4176751
+
+		backingConfiguration
+			valueColumn: wind_maintenance_requests.Priority
+
+	property OrderDate
+		dataType: dateTime
+		lineageTag: fcb2c4a8-8e1e-487c-970c-9084b95da61e
+
+		backingConfiguration
+			valueColumn: wind_maintenance_requests.OrderDate
+
+	property LastUpdatedDate
+		dataType: dateTime
+		lineageTag: 5e687a20-d42a-4f30-aca1-b2b526d0b713
+
+		backingConfiguration
+			valueColumn: wind_maintenance_requests.LastUpdatedDate
+
+	property EstimatedStartDate
+		dataType: dateTime
+		lineageTag: 76729958-e531-4b98-bffe-ad209d20c6e3
+
+		backingConfiguration
+			valueColumn: wind_maintenance_requests.EstimatedStartDate
+
+	property CommitmentDate
+		dataType: dateTime
+		lineageTag: 4e60d880-ac50-4fb1-9896-1981b0151a9e
+
+		backingConfiguration
+			valueColumn: wind_maintenance_requests.CommitmentDate
+
+	property EstimatedLabourHours
+		dataType: int64
+		lineageTag: cd78f87a-2aa3-4f07-aa4c-6c175a04e9cc
+
+		backingConfiguration
+			valueColumn: wind_maintenance_requests.EstimatedLabourHours
+
+	property ActualLabourHours
+		dataType: int64
+		lineageTag: d9b7eedb-dcda-4bbd-84a3-1d830628c253
+
+		backingConfiguration
+			valueColumn: wind_maintenance_requests.ActualLabourHours
+
+	property ActualEndDate
+		dataType: dateTime
+		lineageTag: e69986de-44de-4d4d-a921-978f7c698536
+
+		backingConfiguration
+			valueColumn: wind_maintenance_requests.ActualEndDate
+
+	property AssignedTo
+		dataType: int64
+		lineageTag: 0fea27ef-74eb-4ad0-833f-15b6f487cdcf
+
+		backingConfiguration
+			valueColumn: wind_maintenance_requests.AssignedTo
+

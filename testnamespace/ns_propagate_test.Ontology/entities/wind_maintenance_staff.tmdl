@@ -1,0 +1,55 @@
+entity wind_maintenance_staff
+	displayName: wind_maintenance_staff
+	lineageTag: 64a05786-3021-413b-8b81-3b505076c023
+	backingTable: wind_maintenance_staff
+	namespace: default
+
+	property Id
+		dataType: int64
+		lineageTag: 96aba45e-983a-405f-a152-9c6fe5cde8ff
+
+		backingConfiguration
+			valueColumn: wind_maintenance_staff.Id
+
+	property Name
+		dataType: string
+		lineageTag: fb27912a-393f-466c-bd17-89d9db79a414
+
+		backingConfiguration
+			valueColumn: wind_maintenance_staff.Name
+
+	property Email
+		dataType: string
+		lineageTag: 84d4edc1-0adc-48f6-b087-c717334f81fe
+
+		backingConfiguration
+			valueColumn: wind_maintenance_staff.Email
+
+	property Phone
+		dataType: string
+		lineageTag: ed2aad12-cbe1-4fbe-b530-9c29f0f2a235
+
+		backingConfiguration
+			valueColumn: wind_maintenance_staff.Phone
+
+	property JoinedSince
+		dataType: dateTime
+		lineageTag: 44f034b9-9b20-4003-969a-44abb85383a6
+
+		backingConfiguration
+			valueColumn: wind_maintenance_staff.JoinedSince
+
+	property Manager
+		dataType: string
+		lineageTag: e9ce806e-d38a-4cf1-86b4-dc383672a50a
+
+		backingConfiguration
+			valueColumn: wind_maintenance_staff.Manager
+
+	property WorkOrderTypeResponsible
+		dataType: int64
+		lineageTag: 16a6bd9c-0a73-47d9-b4ac-c4814436bf8e
+
+		backingConfiguration
+			valueColumn: wind_maintenance_staff.WorkOrderTypeResponsible
+

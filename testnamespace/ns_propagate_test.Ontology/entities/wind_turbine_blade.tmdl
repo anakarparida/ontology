@@ -1,0 +1,48 @@
+entity wind_turbine_blade
+	displayName: wind_turbine_blade
+	lineageTag: cf495e5d-9a3b-41fd-84bd-8fcc769e38df
+	backingTable: wind_turbine_blade
+	namespace: default
+
+	property TurbineId
+		dataType: string
+		lineageTag: e042dcab-dfa9-4f10-86b3-b0400b95f38a
+
+		backingConfiguration
+			valueColumn: wind_turbine_blade.TurbineId
+
+	property ComponentId
+		dataType: string
+		lineageTag: a3550537-9897-4dd1-b5b1-db1d94070c10
+
+		backingConfiguration
+			valueColumn: wind_turbine_blade.ComponentId
+
+	property ComponentNane
+		dataType: string
+		lineageTag: 3a99bd76-9220-499a-a0fe-86abda5d41ba
+
+		backingConfiguration
+			valueColumn: wind_turbine_blade.ComponentNane
+
+	property ComponentDetails
+		dataType: string
+		lineageTag: 535449dc-b091-4d9d-8315-33512f54814b
+
+		backingConfiguration
+			valueColumn: wind_turbine_blade.ComponentDetails
+
+	property SerialNumber
+		dataType: string
+		lineageTag: f62cf150-8278-4a06-89b9-bf7a165a270e
+
+		backingConfiguration
+			valueColumn: wind_turbine_blade.SerialNumber
+
+	property Manufacturer
+		dataType: string
+		lineageTag: 76b28767-4469-4c89-b39c-a765ce745072
+
+		backingConfiguration
+			valueColumn: wind_turbine_blade.Manufacturer
+

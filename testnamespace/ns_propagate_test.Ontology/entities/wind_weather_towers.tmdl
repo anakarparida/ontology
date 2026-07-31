@@ -1,0 +1,115 @@
+entity wind_weather_towers
+	displayName: wind_weather_towers
+	lineageTag: bcd150e2-fabe-4929-a242-18b081436442
+	backingTable: wind_weather_towers
+	namespace: default
+
+	property TowerId
+		dataType: string
+		lineageTag: b69a8f37-3396-4274-8614-4ca649766b74
+
+		backingConfiguration
+			valueColumn: wind_weather_towers.TowerId
+
+	property PlantId
+		dataType: string
+		lineageTag: 97f01395-fe9b-42ee-a47e-81dbe235db28
+
+		backingConfiguration
+			valueColumn: wind_weather_towers.PlantId
+
+	property Name
+		dataType: string
+		lineageTag: cc66ebde-2010-48a9-9916-f1a8d63846fd
+
+		backingConfiguration
+			valueColumn: wind_weather_towers.Name
+
+	property Height_m
+		dataType: int64
+		lineageTag: d80bc965-c66d-48bf-a7b3-a61743959156
+
+		backingConfiguration
+			valueColumn: wind_weather_towers.Height_m
+
+	property Humidity_percent
+		dataType: TimeSeries<int64>
+		lineageTag: dea02670-c0c8-482c-b601-301f1aeb172e
+
+		backingConfiguration
+			type: timeSeries
+			valueColumn: wind_weather_tower_telemetry_augmented_Mar2025.Humidity_percent
+			orderingColumn: wind_weather_tower_telemetry_augmented_Mar2025.Timestamp
+
+	property Pressure_hPa
+		dataType: TimeSeries<int64>
+		lineageTag: 2c61ccf7-625a-447e-b461-bd9d309a8a98
+
+		backingConfiguration
+			type: timeSeries
+			valueColumn: wind_weather_tower_telemetry_augmented_Mar2025.Pressure_hPa
+			orderingColumn: wind_weather_tower_telemetry_augmented_Mar2025.Timestamp
+
+	property SolarRadiation
+		dataType: TimeSeries<int64>
+		lineageTag: 67779362-1be8-4ca8-9418-cab81887012c
+
+		backingConfiguration
+			type: timeSeries
+			valueColumn: wind_weather_tower_telemetry_augmented_Mar2025.SolarRadiation
+			orderingColumn: wind_weather_tower_telemetry_augmented_Mar2025.Timestamp
+
+	property Temperature
+		dataType: TimeSeries<int64>
+		lineageTag: 189b483b-f0fa-426d-acf7-b17db4d6bd99
+
+		backingConfiguration
+			type: timeSeries
+			valueColumn: wind_weather_tower_telemetry_augmented_Mar2025.Temperature
+			orderingColumn: wind_weather_tower_telemetry_augmented_Mar2025.Timestamp
+
+	property Turbulence
+		dataType: TimeSeries<int64>
+		lineageTag: 40923865-a16a-4609-8617-690f083279ef
+
+		backingConfiguration
+			type: timeSeries
+			valueColumn: wind_weather_tower_telemetry_augmented_Mar2025.Turbulence
+			orderingColumn: wind_weather_tower_telemetry_augmented_Mar2025.Timestamp
+
+	property WindDirection
+		dataType: TimeSeries<int64>
+		lineageTag: 0f8ea51b-6cab-4813-83f9-2dac3bea7d6a
+
+		backingConfiguration
+			type: timeSeries
+			valueColumn: wind_weather_tower_telemetry_augmented_Mar2025.WindDirection
+			orderingColumn: wind_weather_tower_telemetry_augmented_Mar2025.Timestamp
+
+	property WindShear
+		dataType: TimeSeries<double>
+		lineageTag: c5b29655-3124-4dc4-ad2f-1deefbe6175b
+
+		backingConfiguration
+			type: timeSeries
+			valueColumn: wind_weather_tower_telemetry_augmented_Mar2025.WindShear
+			orderingColumn: wind_weather_tower_telemetry_augmented_Mar2025.Timestamp
+
+	property WindSpeed
+		dataType: TimeSeries<int64>
+		lineageTag: f7fe0506-b48a-4240-95ca-97a0bf5ae363
+
+		backingConfiguration
+			type: timeSeries
+			valueColumn: wind_weather_tower_telemetry_augmented_Mar2025.WindSpeed
+			orderingColumn: wind_weather_tower_telemetry_augmented_Mar2025.Timestamp
+
+	property Timestamp
+		dataType: TimeSeries<dateTime>
+		lineageTag: 037ad1b2-2a26-481c-9b17-a0e204050de8
+
+		backingConfiguration
+			type: timeSeries
+			valueColumn: wind_weather_tower_telemetry_augmented_Mar2025.Timestamp
+			orderingColumn: wind_weather_tower_telemetry_augmented_Mar2025.Timestamp
+

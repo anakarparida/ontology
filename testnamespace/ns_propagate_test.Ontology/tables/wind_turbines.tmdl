@@ -1,0 +1,88 @@
+table wind_turbines
+	lineageTag: a27a21d6-9b5e-4707-9c64-d66d971c96b2
+	sourceLineageTag: [dbo].[wind_turbines]
+
+	column TurbineId
+		dataType: string
+		lineageTag: 638a0596-ef06-402f-b301-aabd223c4dfc
+		sourceLineageTag: TurbineId
+		sourceColumn: TurbineId
+
+		annotation SummarizationSetBy = Automatic
+
+	column PlantId
+		dataType: string
+		lineageTag: e0010bb0-0651-4b12-9071-8058cb62b86d
+		sourceLineageTag: PlantId
+		sourceColumn: PlantId
+
+		annotation SummarizationSetBy = Automatic
+
+	column TurbineName
+		dataType: string
+		lineageTag: e7053f42-b7fc-4b3f-9032-a44e4b530446
+		sourceLineageTag: TurbineName
+		sourceColumn: TurbineName
+
+		annotation SummarizationSetBy = Automatic
+
+	column Axis
+		dataType: string
+		lineageTag: 8ca9bdfb-ca39-4d6d-9333-b8c8ade23167
+		sourceLineageTag: Axis
+		sourceColumn: Axis
+
+		annotation SummarizationSetBy = Automatic
+
+	column TurbineStatus
+		dataType: string
+		lineageTag: 845b6e34-2ff5-4e34-8742-a12a41863d79
+		sourceLineageTag: TurbineStatus
+		sourceColumn: TurbineStatus
+
+		annotation SummarizationSetBy = Automatic
+
+	column Capacity
+		dataType: double
+		lineageTag: 9944fbf3-d1e6-4a16-ae21-5411ae6266a6
+		sourceLineageTag: Capacity
+		sourceColumn: Capacity
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column HubHeight
+		dataType: int64
+		formatString: 0
+		lineageTag: 1daab2da-46b0-4ecc-ad78-8c5bc0c2ff24
+		sourceLineageTag: HubHeight
+		sourceColumn: HubHeight
+
+		annotation SummarizationSetBy = Automatic
+
+	column SerialNumber
+		dataType: string
+		lineageTag: a79be729-e810-472d-9c8c-9e6290af6e10
+		sourceLineageTag: SerialNumber
+		sourceColumn: SerialNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column Manufacturer
+		dataType: string
+		lineageTag: a122c6c8-9c2b-423e-a610-4cd4b15f464e
+		sourceLineageTag: Manufacturer
+		sourceColumn: Manufacturer
+
+		annotation SummarizationSetBy = Automatic
+
+	partition wind_turbines = entity
+		mode: directLake
+		source
+			entityName: wind_turbines
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

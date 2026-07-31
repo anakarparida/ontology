@@ -1,0 +1,62 @@
+entity wind_power_plants
+	displayName: wind_power_plants
+	lineageTag: 8db63261-6b0f-490e-8080-25af856dbc23
+	backingTable: wind_power_plants
+	namespace: default
+
+	property PlantId
+		dataType: string
+		lineageTag: d67bc959-3b71-4e0f-9535-714a5f0dc9b4
+
+		backingConfiguration
+			valueColumn: wind_power_plants.PlantId
+
+	property PlantName
+		dataType: string
+		lineageTag: a83fc9e6-a50f-48ac-b0bc-c2881fb08c9e
+
+		backingConfiguration
+			valueColumn: wind_power_plants.PlantName
+
+	property Type
+		dataType: string
+		lineageTag: b4f555d9-5424-4350-9e5a-d0280c8cb850
+
+		backingConfiguration
+			valueColumn: wind_power_plants.Type
+
+	property CapacityFactor
+		dataType: double
+		lineageTag: e9c904c7-7030-484c-b050-546fed228a56
+
+		backingConfiguration
+			valueColumn: wind_power_plants.CapacityFactor
+
+	property Location
+		dataType: string
+		lineageTag: a1c61d81-39cb-410d-9099-11e35c09033e
+
+		backingConfiguration
+			valueColumn: wind_power_plants.Location
+
+	property ZipCode
+		dataType: int64
+		lineageTag: 3ba07eee-e66c-4132-bc7a-1ce05a1b758b
+
+		backingConfiguration
+			valueColumn: wind_power_plants.ZipCode
+
+	property Latitude
+		dataType: double
+		lineageTag: 665f74b7-e646-48b7-aa85-1d0b9a00df8b
+
+		backingConfiguration
+			valueColumn: wind_power_plants.Latitude
+
+	property Longitude
+		dataType: double
+		lineageTag: d11fb2c8-ba81-4282-aef7-17469a56dbb6
+
+		backingConfiguration
+			valueColumn: wind_power_plants.Longitude
+

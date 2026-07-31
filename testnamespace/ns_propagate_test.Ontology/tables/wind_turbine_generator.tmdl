@@ -1,0 +1,61 @@
+table wind_turbine_generator
+	lineageTag: 67e7384f-1c33-4d41-925b-b71987785e7d
+	sourceLineageTag: [dbo].[wind_turbine_generator]
+
+	column TurbineId
+		dataType: string
+		lineageTag: 9bed4c3c-88ad-4253-98da-488d1b8ea963
+		sourceLineageTag: TurbineId
+		sourceColumn: TurbineId
+
+		annotation SummarizationSetBy = Automatic
+
+	column ComponentId
+		dataType: string
+		lineageTag: 1f163e3e-8e8f-483a-b8e7-a9ab366cdf10
+		sourceLineageTag: ComponentId
+		sourceColumn: ComponentId
+
+		annotation SummarizationSetBy = Automatic
+
+	column ComponentNane
+		dataType: string
+		lineageTag: 5349c11d-7d78-4aed-87cc-04e2cb7e1c4a
+		sourceLineageTag: ComponentNane
+		sourceColumn: ComponentNane
+
+		annotation SummarizationSetBy = Automatic
+
+	column ComponentDetails
+		dataType: string
+		lineageTag: 9b49b1e8-fa71-49fe-9271-3b1f8c4ddfa5
+		sourceLineageTag: ComponentDetails
+		sourceColumn: ComponentDetails
+
+		annotation SummarizationSetBy = Automatic
+
+	column SerialNumber
+		dataType: string
+		lineageTag: 16ec68b9-7bb6-432b-bf37-221d954e303c
+		sourceLineageTag: SerialNumber
+		sourceColumn: SerialNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column Manufacturer
+		dataType: string
+		lineageTag: 0ee8c263-1632-460e-a2ad-ed4b4a5c8099
+		sourceLineageTag: Manufacturer
+		sourceColumn: Manufacturer
+
+		annotation SummarizationSetBy = Automatic
+
+	partition wind_turbine_generator = entity
+		mode: directLake
+		source
+			entityName: wind_turbine_generator
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,48 @@
+entity wind_turbine_generator
+	displayName: wind_turbine_generator
+	lineageTag: 2593170a-d25f-49cf-a4ce-21f468c203d9
+	backingTable: wind_turbine_generator
+	namespace: default
+
+	property TurbineId
+		dataType: string
+		lineageTag: 5a0374cd-7d29-41d9-8a69-5a640753f37e
+
+		backingConfiguration
+			valueColumn: wind_turbine_generator.TurbineId
+
+	property ComponentId
+		dataType: string
+		lineageTag: f1f3b409-5c0e-41a8-a2ce-3a066e0c9988
+
+		backingConfiguration
+			valueColumn: wind_turbine_generator.ComponentId
+
+	property ComponentNane
+		dataType: string
+		lineageTag: b827c87d-5491-4ff4-b0af-b0d78b12dc13
+
+		backingConfiguration
+			valueColumn: wind_turbine_generator.ComponentNane
+
+	property ComponentDetails
+		dataType: string
+		lineageTag: 0e1316a5-5f06-4341-ae41-f8c387997fe6
+
+		backingConfiguration
+			valueColumn: wind_turbine_generator.ComponentDetails
+
+	property SerialNumber
+		dataType: string
+		lineageTag: a58b95bd-029f-44dd-b659-838c15f92aff
+
+		backingConfiguration
+			valueColumn: wind_turbine_generator.SerialNumber
+
+	property Manufacturer
+		dataType: string
+		lineageTag: 293afdec-4ac7-44db-bea6-e7499d964a2d
+
+		backingConfiguration
+			valueColumn: wind_turbine_generator.Manufacturer
+

@@ -1,0 +1,46 @@
+table wind_weather_towers
+	lineageTag: ffec9c68-a9c9-42df-bb6d-65b11b11965d
+	sourceLineageTag: [dbo].[wind_weather_towers]
+
+	column TowerId
+		dataType: string
+		lineageTag: f81d6776-879f-4ae4-9c7b-124cae624dda
+		sourceLineageTag: TowerId
+		sourceColumn: TowerId
+
+		annotation SummarizationSetBy = Automatic
+
+	column PlantId
+		dataType: string
+		lineageTag: af3ba6f3-3567-466f-8f66-7308ec0077cf
+		sourceLineageTag: PlantId
+		sourceColumn: PlantId
+
+		annotation SummarizationSetBy = Automatic
+
+	column Name
+		dataType: string
+		lineageTag: f2113d4d-8087-47bf-abf8-af370c034bba
+		sourceLineageTag: Name
+		sourceColumn: Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Height_m
+		dataType: int64
+		formatString: 0
+		lineageTag: 9064cfc4-39a2-456f-8e92-5939979d8ad8
+		sourceLineageTag: Height_m
+		sourceColumn: Height_m
+
+		annotation SummarizationSetBy = Automatic
+
+	partition wind_weather_towers = entity
+		mode: directLake
+		source
+			entityName: wind_weather_towers
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

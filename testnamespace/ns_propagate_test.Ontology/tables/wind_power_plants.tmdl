@@ -1,0 +1,84 @@
+table wind_power_plants
+	lineageTag: 8cc29f65-a644-47cc-a682-3244c547b36e
+	sourceLineageTag: [dbo].[wind_power_plants]
+
+	column PlantId
+		dataType: string
+		lineageTag: d3c3bc21-0c6f-4a80-b572-58cc515f5dce
+		sourceLineageTag: PlantId
+		sourceColumn: PlantId
+
+		annotation SummarizationSetBy = Automatic
+
+	column PlantName
+		dataType: string
+		lineageTag: ceb92927-efd2-454a-9e37-9ebff4aeecb1
+		sourceLineageTag: PlantName
+		sourceColumn: PlantName
+
+		annotation SummarizationSetBy = Automatic
+
+	column Type
+		dataType: string
+		lineageTag: 655bbec2-c890-4339-bcd9-3a65336aa8f9
+		sourceLineageTag: Type
+		sourceColumn: Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column CapacityFactor
+		dataType: double
+		lineageTag: 59e3c537-541b-48fd-8487-273ac17aed86
+		sourceLineageTag: CapacityFactor
+		sourceColumn: CapacityFactor
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Location
+		dataType: string
+		lineageTag: 1d8c77d3-8662-4e00-baa8-149837164bac
+		sourceLineageTag: Location
+		sourceColumn: Location
+
+		annotation SummarizationSetBy = Automatic
+
+	column ZipCode
+		dataType: int64
+		formatString: 0
+		lineageTag: fb9a38cd-378e-4414-be3b-5aacf6e37cbf
+		sourceLineageTag: ZipCode
+		sourceColumn: ZipCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column Latitude
+		dataType: double
+		lineageTag: f6d987b2-6b4d-407f-9bdb-59a7f382e24f
+		sourceLineageTag: Latitude
+		sourceColumn: Latitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Longitude
+		dataType: double
+		lineageTag: 2053665a-e6f8-4995-9bbe-a69fefcb7a58
+		sourceLineageTag: Longitude
+		sourceColumn: Longitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition wind_power_plants = entity
+		mode: directLake
+		source
+			entityName: wind_power_plants
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+
