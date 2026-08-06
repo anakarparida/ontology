@@ -1,0 +1,11 @@
+table Sensor
+	lineageTag: 808122c1-fee8-47e1-9121-9eedfd01c136
+
+	column Id
+		dataType: int64
+		lineageTag: 7b8f3fc6-f7e3-4c91-b3fa-cdb3b5eef50f
+		sourceColumn: Id
+
+	partition SensorPartition = m
+		source = let Source = Sql.Database(type table [Id = Int64.Type], {}) in Source
+

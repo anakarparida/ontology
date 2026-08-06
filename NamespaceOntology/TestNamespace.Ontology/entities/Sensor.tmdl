@@ -1,0 +1,12 @@
+entity Sensor
+	lineageTag: d312aeac-5929-4755-af1d-fe1424319b1f
+	backingTable: Sensor
+	keyProperty: Id
+
+	property Id
+		dataType: int64
+		lineageTag: 29efa550-2db3-474b-94bc-a4c482d170ff
+
+		backingConfiguration
+			valueColumn: Sensor.Id
+

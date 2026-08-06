@@ -1,0 +1,15 @@
+model Model
+
+ref table Freezer
+ref table Sensor
+
+ref entity Namespace01#Freezer
+ref entity Namespace02#Freezer
+ref entity Namespace02#Turbine
+ref entity Sensor
+
+ref namespace default
+ref namespace sales
+ref namespace Namespace01
+ref namespace Namespace02
+

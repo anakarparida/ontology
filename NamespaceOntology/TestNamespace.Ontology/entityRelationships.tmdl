@@ -1,0 +1,15 @@
+entityRelationship Contains
+	lineageTag: 78eff369-c24f-4d98-b310-20e45dedbc42
+	fromEntity: Sensor
+	toEntity: Namespace01#Freezer
+
+entityRelationship Namespace01#Contains
+	lineageTag: c4114156-0657-42dc-b547-5778927f012f
+	fromEntity: Namespace01#Freezer
+	toEntity: Sensor
+
+entityRelationship Namespace02#Contains
+	lineageTag: 9a7f6a87-6c30-4862-b36c-75b4d5de004c
+	fromEntity: Namespace02#Freezer
+	toEntity: Namespace02#Turbine
+
