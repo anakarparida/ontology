@@ -1,4 +1,0 @@
-relationship FreezerSensor
-	fromColumn: Freezer.Id
-	toColumn: Sensor.Id
-

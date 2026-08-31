@@ -1,3 +1,0 @@
-expression Query = let Source = Sql.Database(type table [Id = Int64.Type], {}) in Source
-	lineageTag: 0b0b1998-7c9b-4c6a-a3ce-f894f013fe9a
-
