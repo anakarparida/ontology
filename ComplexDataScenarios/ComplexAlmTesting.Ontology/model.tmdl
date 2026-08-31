@@ -1,0 +1,8 @@
+model Model
+
+ref table CpxMeta_20260831_Readings
+
+ref entity CpxMeta_20260831_Sensor
+
+ref namespace default
+

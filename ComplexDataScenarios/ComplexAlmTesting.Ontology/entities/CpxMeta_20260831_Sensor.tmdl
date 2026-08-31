@@ -1,0 +1,111 @@
+entity CpxMeta_20260831_Sensor
+	lineageTag: 59503a91-6950-4bfa-8d0f-72df23bbb31c
+	backingTable: CpxMeta_20260831_Readings
+
+	property HomeLocation
+		dataType: complex
+		lineageTag: 18565329-c5b2-4938-9734-3de41d9c4793
+		complexDataType =
+			{
+			  "kind": "struct",
+			  "fields": [
+			    {
+			      "name": "latitude",
+			      "type": {
+			        "kind": "primitive",
+			        "dataType": "double"
+			      }
+			    },
+			    {
+			      "name": "longitude",
+			      "type": {
+			        "kind": "primitive",
+			        "dataType": "double"
+			      }
+			    }
+			  ]
+			}
+
+		backingConfiguration
+			type: struct
+			fields =
+				[
+				  {
+				    "name": "latitude",
+				    "backingConfiguration": {
+				      "type": "default",
+				      "valueColumn": {
+				        "table": "CpxMeta_20260831_Readings",
+				        "column": "HomeLatitude"
+				      }
+				    }
+				  },
+				  {
+				    "name": "longitude",
+				    "backingConfiguration": {
+				      "type": "default",
+				      "valueColumn": {
+				        "table": "CpxMeta_20260831_Readings",
+				        "column": "HomeLongitude"
+				      }
+				    }
+				  }
+				]
+
+	property LocationHistory
+		dataType: complex
+		lineageTag: 1e1f60e3-d921-4eb0-9565-76c0d8cc8de8
+		complexDataType =
+			{
+			  "kind": "timeSeries",
+			  "elementType": {
+			    "kind": "struct",
+			    "fields": [
+			      {
+			        "name": "latitude",
+			        "type": {
+			          "kind": "primitive",
+			          "dataType": "double"
+			        }
+			      },
+			      {
+			        "name": "longitude",
+			        "type": {
+			          "kind": "primitive",
+			          "dataType": "double"
+			        }
+			      }
+			    ]
+			  }
+			}
+
+		backingConfiguration
+			type: timeSeries
+			orderingColumn: CpxMeta_20260831_Readings.ObservedAt
+			valueBackingConfiguration =
+				{
+				  "type": "struct",
+				  "fields": [
+				    {
+				      "name": "latitude",
+				      "backingConfiguration": {
+				        "type": "default",
+				        "valueColumn": {
+				          "table": "CpxMeta_20260831_Readings",
+				          "column": "Latitude"
+				        }
+				      }
+				    },
+				    {
+				      "name": "longitude",
+				      "backingConfiguration": {
+				        "type": "default",
+				        "valueColumn": {
+				          "table": "CpxMeta_20260831_Readings",
+				          "column": "Longitude"
+				        }
+				      }
+				    }
+				  ]
+				}
+

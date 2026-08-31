@@ -1,0 +1,33 @@
+table CpxMeta_20260831_Readings
+	lineageTag: cbd79694-c01f-4bd0-974f-1da0dbed9138
+
+	column HomeLatitude
+		dataType: double
+		isNullable: false
+		lineageTag: 3133f9ca-b7ed-4b06-aa90-b4f68dccb8d0
+		sourceColumn: HomeLatitude
+
+	column HomeLongitude
+		dataType: double
+		isNullable: false
+		lineageTag: 00888794-83a3-4143-8889-e3098e86288e
+		sourceColumn: HomeLongitude
+
+	column ObservedAt
+		dataType: dateTime
+		isNullable: false
+		lineageTag: a37aaf59-e60a-4e67-850c-e72b4373c318
+		sourceColumn: ObservedAt
+
+	column Latitude
+		dataType: double
+		isNullable: false
+		lineageTag: 7a135657-c1d1-459a-bc4b-c9c1022783c0
+		sourceColumn: Latitude
+
+	column Longitude
+		dataType: double
+		isNullable: false
+		lineageTag: bd8d0fbe-a486-4f24-9fcd-85cad1d8a9e5
+		sourceColumn: Longitude
+
